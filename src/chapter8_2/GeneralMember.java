@@ -6,11 +6,13 @@ public class GeneralMember {
     private long id;
     private String name;
     private Lesson lesson;
-    public GeneralMember(long id, String name) {
+
+    public GeneralMember(long id, String name, Lesson lesson) {
         this.id = id;
         this.name = name;
         this.lesson = lesson;
     }
+
     public int membershipFee() {
         return 1000;
     }
@@ -28,5 +30,17 @@ public class GeneralMember {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public int fee() {
+        return lesson.fee();
+    }
+
+    public String getLessonId() {
+        return lesson.getLessonId();
+    }
+
+    public String getLessonName() {
+        return lesson.getLessonName();
     }
 }
