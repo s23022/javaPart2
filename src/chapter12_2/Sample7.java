@@ -10,6 +10,6 @@ public class Sample7 {
         map.put(100, "木村正一");
         map.put(300, "佐藤修");
 
-        map.forEach((k,v)->System.out.println(k + " " + v  ));
+        map.forEach((k,v)->System.out.println(k + " " + v));
     }
 }
