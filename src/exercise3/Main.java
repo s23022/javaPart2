@@ -28,5 +28,18 @@ public class Main {
         for(Dog d : dogs){
             d.bark();
         }
+
+
+
+        Window w = new Window();
+
+        w.setHeight(10);
+        System.out.println(w.getHeight());
+        w.setWidth(100);
+        System.out.println(w.getWidth());
+
+
+
+
     }
 }
