@@ -18,7 +18,7 @@ public class Tangogame {
     static void playGame() {
         Scanner scanner = new Scanner(System.in); // ユーザーの入力を受け取るScannerオブジェクト
         Random random = new Random();// ランダムな単語を選ぶためのRandomオブジェクト
-        int attempts = 0; // ユーザーの試行回数
+        int attempts = 0; // ユーザーの試行回数　
 
         // 単語リストからランダムに単語を選択
         String answer = WORDS[random.nextInt(WORDS.length)];
@@ -39,12 +39,12 @@ public class Tangogame {
             //入力した単語が正しいかチェック
             if (isCorrect(guess, answer)) {
                 // 正解の場合
-                System.out.println("おめでとうございます！正解です。ゲームクリア！");
+                System.out.println("正解です! ゲームクリア！");
                 return; // ゲーム終了
             } else {
                 //不正解の場合
                 attempts++;
-                System.out.println("不正解です。残りの試行回数: " + (MAX_ATTEMPTS - attempts));
+                System.out.println("残りの試行回数: " + (MAX_ATTEMPTS - attempts));
             }
         }
 
